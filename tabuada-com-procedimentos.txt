@@ -1,0 +1,36 @@
+Algoritmo "tabuadacomprocedimentos"
+var
+   N, CONT, MULT:inteiro
+   SIM, PERG: caractere
+procedimento TOPO ()
+inicio
+   escreval ("===================================================")
+   escreval ("                    TABUADA")
+   escreval ("===================================================")
+   escreva ("Voce quer saber a tabuada de qual numero? ")
+   leia(N)
+   escreva ("E ate qual multiplicador?")
+   leia (MULT)
+fimprocedimento
+procedimento PERGUNTA ()
+inicio
+
+   escreval ("=====================================================")
+   escreval ("                DESEJA CONTINUAR? S/N")
+   escreval ("=====================================================")
+
+fimprocedimento
+inicio
+   repita
+      TOPO
+      CONT <- 0
+      enquanto CONT < MULT faca
+         CONT <- CONT + 1
+         escrevaL (N, " x", CONT,"=", N*CONT)
+      fimenquanto
+      PERGUNTA
+      leia(PERG)
+      limpatela
+   ate (PERG= "N")
+
+fimalgoritmo
