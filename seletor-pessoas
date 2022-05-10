@@ -1,0 +1,50 @@
+algoritmo "seletordepessoas
+var  OP, M, F, SX :caractere
+   CB ,TM, TF, ID:inteiro
+inicio
+      TM <- 0
+      TF <- 0
+   repita
+      escreval ()
+      escreval ("=================================")
+      escreval ("      SELETOR DE PESSOAS ")
+      escreval ("=================================")
+      escreva ("Qual o sexo? [M/F] ")
+      leia (SX)
+      escreva ("Qual a idade? ")
+      leia (ID)
+      escreva ("Qual a cor do cabelo? ")
+      escreval ()
+      escreval ("-------------------------------")
+      escreval ("[1] Preto ")
+      escreval ("[2] Castanho")
+      escreval ("[3] Loiro ")
+      escreval ("[4] Ruivo")
+      leia (CB)
+      escrevaL ()
+      escreva (" Quer continuar? [S/N]")
+      leia (OP)
+      se (SX = "M") e (ID >= 18) e (CB = 2) entao
+         TM <-  TM + 1
+      fimse
+      se (SX = "F") e (ID >= 25) e (ID <= 30) e (CB = 3) entao
+         TF <- TF + 1
+         fimse
+
+
+      limpatela
+      ate (OP = "N")
+      escreval ()
+      escreval ("===================================================")
+      escreval ("          RESULTADO FINAL ")
+      escreval ("===================================================")
+      escreval()
+      escreval ("Total de homens com mais de 18 e cabelos castanhos foi: ", TM)
+      escreval ("Total de mulheres com mais de 25 e menos de 30 foi: " ,TF)
+
+
+
+fimalgoritmo
+
+//ESTRUTURA DE REPETÇÃO COM CONDICIONAIS ONDE INFORMA O SEXO/IDADE/CORCABELO
+//E INFORMA O TOTAL DE QUANTAS PESSOAS ESTAO DENTRO DO PADRAO REQUERIDO
