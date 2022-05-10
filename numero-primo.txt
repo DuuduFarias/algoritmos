@@ -1,0 +1,24 @@
+algoritmo "NumeroPrimo"
+var CONT, N, CONTDIV: inteiro
+
+inicio
+   CONT <- 1
+   CONTDIV <- 0
+   escreva ("Digite o Numero: ")
+   leia (N)
+   repita
+      se(N % CONT = 0) entao
+         CONTDIV <- CONTDIV + 1
+      fimse
+      CONT <- CONT + 1
+
+   ate (CONT > N)
+   se (CONTDIV > 2) entao
+      escreval ("O Numero", N ," nao é primo!")
+   senao
+      escreval("O Numero", N , " é primo!")
+   fimse
+
+
+fimalgoritmo
+//estrutara de repetção com dondicionais para saber se o numero informado é primo.
