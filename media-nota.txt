@@ -1,0 +1,21 @@
+Algoritmo "aluno"
+Var PN, SN, M: real
+
+
+Inicio
+      escreva ("Primeira nota: ")
+      leia (PN)
+      escreva("Segunda nota: ")
+      leia (SN)
+      M <- (PN + SN) / 2
+      escre'val ("A media do aluno foi: ",M:4:2)
+      se (M >= 7) entao
+           escreval ("Aluno aprovado!")
+      senao
+           se (M >= 5) e (M<7) entao
+           escreval ("aluno esta em recuperacao!")
+           senao
+           escreva ("Aluno REPROVADO!")
+
+               fimse
+      fimalgoritmo
