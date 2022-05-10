@@ -1,0 +1,37 @@
+algoritmo "SUPERCONTADOR"
+var CC, CD, OP:inteiro
+inicio
+   repita
+   escreval ()
+      escreval("--------------------")
+      escreval("       MENU        ")
+      escreval("--------------------")
+      escreval("[1] de 1 a 10")
+      escreval("[2] de 10 a 1")
+      escreval("[3] para SAIR")
+      escreva ("Qual opção voce deseja: ")
+      leia (OP)
+      se (OP = 1) entao
+         CC <- 1
+         enquanto   (CC <= 10) faca
+
+            escreva (CC,"..")
+            CC <- CC + 1
+         fimenquanto
+      senao
+         se   (OP = 2) entao
+            CD <- 10
+            enquanto (CD > 0) faca
+               escreva (CD, "...")
+               CD <- CD - 1
+            fimenquanto
+         senao
+            se(OP = 3) entao
+               escreva ("SAINDO...")
+            fimse
+         fimse
+      fimse
+   ate (OP =3)
+fimalgoritmo
+
+//estrutura de repetição com condicionais, mais de 2 opções
