@@ -1,0 +1,32 @@
+algoritmo "AnalisadorDeValores"
+var CONT, VALOR, SOMA, DIVS, SOMAP, NULOS : inteiro
+    MEDIA: real
+inicio
+      CONT <- 1
+      SOMA <- 0
+      MEDIA <- 0
+      DIVS <- 0
+      SOMAP <- 0
+      NULOS <- 0
+      para CONT <- 1 ate 5 faca
+      escreva ("Digite", CONT, "st valor: ")
+      leia (VALOR)
+      SOMA <- SOMA + VALOR
+      MEDIA <- SOMA / 2
+      se (VALOR <= 0) entao
+      NULOS <- NULOS +1
+      fimse
+      se (VALOR%5=0) entao
+      DIVS <- DIVS + 1
+      fimse
+      se (VALOR%2=0) entao
+      SOMAP <- SOMAP + VALOR
+      
+      fimse
+      fimpara
+      escreval ("==================================================")
+      escreval ("A soma de todos os valores foi: ", SOMA )
+      escreval ("A Media dos valores foi: ", MEDIA)
+      escreval ("Total de valores divisiveis por 5 foi: ", DIVS)
+      escreval ("A Soma dos numeros pares foi: ", SOMAP)
+      escreval ("Total de valores nulos foi: ", NULOS)
