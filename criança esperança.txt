@@ -1,0 +1,36 @@
+Algoritmo "CRIANÇA ESPERANÇA"
+
+Var
+   D, valor : inteiro
+
+
+
+Inicio
+      escreval ("--------------------------")
+      escreval ("     CRIANÇA ESPERANÇA    ")
+      escreval ("--------------------------")
+      escreval (" Muito obrigado por doar! ")
+      escreval (" [1] Para doar R$:10 ")
+      escreval (" [2] Para doar R$:20 ")
+      escreval (" [3] Para doar R$:50 ")
+      escreval (" [4] Para doar outros valores ")
+      escreval (" [5] Para cancelar")
+      leia (D)
+      escolha D
+              caso 1
+                   valor <- 10
+              caso 2
+                   valor <- 20
+              caso 3
+                   valor <- 50
+              caso 4
+              escreva ("Qual o valor da doação?")
+              leia (valor)
+              caso 5
+                   valor <- 0
+      Fimescolha
+      escreval ("----------------------------")
+      escreval ("SUA DOAÇÂO FOI DE R$:",valor)
+      escreval (" MUITO OBRIGADO!")
+
+Fimalgoritmo
