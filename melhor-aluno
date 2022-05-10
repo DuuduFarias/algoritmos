@@ -1,0 +1,26 @@
+algoritmo "melhorAluno"
+var cont, qnt: inteiro
+    nota, melhorN: real
+    aluno, melhorA: caractere
+
+inicio
+      escreval ("----- ESCOLA JAVALI -----")
+      escreva ("Quantos alunos a turma tem? ")
+      leia (qnt)
+      cont <- 1
+           enquanto cont <= qnt faca
+                    escreval ("----------")
+                    escreva ("Nome do Aluno ", cont,": ")
+                    leia (aluno)
+                    escreva ("informe a nota: ")
+                    leia (nota)
+                    cont <- cont +1
+            se (nota > melhorN) entao
+               melhorA <- aluno
+                melhorN <- nota
+      fimse
+      fimenquanto
+      escreval ("----------")
+      escreval ("O melhor aluno foi: ")
+      escreval (">>>", melhorA ," com a nota: ", melhorN.)
+      fimalgoritmo
