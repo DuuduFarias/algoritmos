@@ -1,0 +1,12 @@
+algoritmo "contador"
+var contador, valor :inteiro
+inicio
+      contador <- 0
+      escreva ("Quer contar ate quanto?")
+      leia (valor)
+      enquanto (contador <= valor) faca
+      escreval (contador)
+      contador <- contador + 1
+      fimenquanto
+      escreval ("Terminei de contar.")
+      fimalgoritmo
