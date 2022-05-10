@@ -1,0 +1,14 @@
+algoritmo "tabuada"
+var cont, resp, N:inteiro
+inicio
+      cont <- 1
+      escreva ("Informe qual numero da tabuada': ")
+      leia (N)
+      repita
+      resp <- N * cont
+            escreval(N, "x" ,cont, "=", resp)
+            cont <- cont + 1
+      ate (cont > 10)
+
+fimalgoritmo
+//estrutura de repetção para calcular tabuada do numero desejado.
