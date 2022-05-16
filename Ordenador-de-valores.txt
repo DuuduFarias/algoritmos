@@ -1,0 +1,49 @@
+Algoritmo "ORDENARVALORES"
+// função: ordenar 3 valores em ordem decrescente
+
+Var
+   VALORUM, VALORDOIS, VALORTRES: inteiro
+Inicio
+   escreval ("====================================")
+   escreval ("      ORDENADOR DE VALORES")
+   escreval ("====================================")
+   escreva ("Informe o VALOR 1: ")
+   leia (VALORUM)
+   escreva ("Informe o VALOR 2: ")
+   leia (VALORDOIS)
+   escreva ("Informe o VALOR 3: ")
+   leia (VALORTRES)
+   se (VALORUM > VALORDOIS)  entao
+      se (VALORUM > VALORTRES)  entao
+         se (VALORDOIS > VALORTRES) entao
+            escreval ("A ordem decrecente é: ", VALORUM, ",", VALORDOIS,",", VALORTRES)
+         senao
+            escreval ("A ordem decrescente é: ",VALORUM,",", VALORTRES,",", VALORDOIS)
+         fimse
+      fimse
+   fimse          //se VALORUM > VALORDOIS E VALORTRES (e VALORDOIS > VALORTRES
+
+
+   se (VALORUM < VALORDOIS) entao
+      se (VALORDOIS > VALORTRES) entao
+         se (VALORUM > VALORTRES) entao
+            escreva ("A ordem decrescente é: ", VALORDOIS, ",", VALORUM, ",", VALORTRES)
+         senao
+            escreval ("A ordem decrescente é: ", VALORDOIS,",", VALORTRES,",", VALORUM)
+         fimse
+      fimse
+   fimse       //se VALORDOIS > VALORUM e VALORTRES (e VALORUM > VALORTRES)
+   // senao  VALORDOIS > VALORTRES e VALORUM (e VALORTRES > VALORUM)
+
+   se (VALORUM < VALORDOIS) entao
+      se (VALORDOIS < VALORTRES) entao
+         escreval ("A ordem decrescente é: " VALORTRES, ",", VALORDOIS, "," VALORUM)
+      fimse
+   fimse             //se VALORUM < VALORDOIS E VALORTRES (e VALORDOIS < VALORTRES)
+
+   se (VALORUM > VALORDOIS) entao
+      se (VALORTRES > VALORUM) entao
+         escreval ("A ordem decrescente é: " VALORTRES, "," VALORUM, "," VALORDOIS)
+      fimse
+   fimse             //se VALORTRES > VALORUM e VALORDOIS (e VALORUM > VALORDOIS)
+fimalgoritmo
